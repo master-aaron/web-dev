@@ -173,3 +173,24 @@
 .wd-stat-highlight {
   color: red;
 }
+
+.wd-border-round {
+  border-radius: 50px;
+}
+
+.wd-color-blue {
+  color: blue;
+}
+
+input::placeholder {
+  padding-left: 30px;
+}
+
+.wd-list-header-text {
+  font-weight: bold;
+}
+
+.wd-profile-icon-image {
+  width: 48px;
+  height: 48px;
+}
