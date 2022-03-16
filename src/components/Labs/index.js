@@ -4,8 +4,8 @@ import Styles from "./Styles";
 import ConditionalOutput from "./ConditionalOutput";
 
 import { Link } from "react-router-dom";
-import TodoItem from "./Todo/TodoItem";
-import TodoList from "./Todo/TodoList";
+import TodoItem from "./Todo/todo-item"
+import TodoList from "./Todo/todo-list";
 
 const Labs = () => {
   return (
