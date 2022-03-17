@@ -47,7 +47,7 @@ const ExploreComponent = () => {
       </ul>
       <div className="card">
         <img
-          src="../images/Starship-Mk1-Day.jpg"
+          src="/tuiter/images/Starship-Mk1-Day.jpg"
           className="card-img-top"
           alt="..."
         />
