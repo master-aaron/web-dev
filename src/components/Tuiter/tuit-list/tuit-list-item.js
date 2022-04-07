@@ -2,13 +2,10 @@ import React from "react";
 import "./tuits.css";
 import TuitStats from "./tuit-stats";
 import { useDispatch } from "react-redux";
+import { deleteTuit } from "../actions/tuits-actions";
 
 const TuitListItem = ({ tuit }) => {
   const dispatch = useDispatch();
-
-  const deleteTuit = (tuit) => {
-    dispatch({ type: "delete-tuit", tuit });
-  };
 
   return (
     <li className="list-group-item">
@@ -23,7 +20,7 @@ const TuitListItem = ({ tuit }) => {
           </td>
           <td className="ps-3" style={{ width: "100%" }}>
             <i
-              onClick={() => deleteTuit(tuit)}
+              onClick={() => deleteTuit(dispatch, tuit)}
               className="fa fa-trash fa-pull-right"
             ></i>
             <span className="fw-bold">{tuit.userName}</span>
@@ -60,10 +57,10 @@ const TuitListItem = ({ tuit }) => {
                 <i className="far fa-retweet me-1"></i>
                 123
               </div>
-              <div className="col-3">
+              <div className="col-4">
                 <TuitStats tuit={tuit} />
               </div>
-              <div className="col-3">
+              <div className="col-2">
                 <i className="fa fa-share me-1"></i>
                 123
               </div>
